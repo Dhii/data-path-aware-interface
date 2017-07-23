@@ -2,13 +2,22 @@
 
 namespace Dhii\Data\FuncTest;
 
+use Xpmock\TestCase;
+
 /**
  * Tests {@see \Dhii\Data\PathAwareInterface}.
  *
  * @since [*next-version*]
  */
-class PathAwareInterfaceTest extends \Xpmock\TestCase
+class PathAwareInterfaceTest extends TestCase
 {
+    /**
+     * The name of the test subject.
+     *
+     * @since [*next-version*]
+     */
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\PathAwareInterface';
+
     /**
      * Creates a new instance of the test subject.
      *
@@ -18,7 +27,7 @@ class PathAwareInterfaceTest extends \Xpmock\TestCase
      */
     public function createInstance()
     {
-        $mock = $this->mock('Dhii\\Data\\PathAwareInterface')
+        $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getPath()
             ->new();
 
@@ -34,6 +43,6 @@ class PathAwareInterfaceTest extends \Xpmock\TestCase
     {
         $subject = $this->createInstance();
 
-        $this->assertInstanceOf('Dhii\\Data\\PathAwareInterface', $subject, 'Could not create a valid instance of the test subject.');
+        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'Could not create a valid instance of the test subject.');
     }
 }
