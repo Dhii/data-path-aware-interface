@@ -10,7 +10,7 @@ namespace Dhii\Data;
 interface PathAwareInterface
 {
     /**
-     * Retrieve the path that belongs to this instancec.
+     * Retrieve the path that belongs to this instance.
      *
      * @since [*next-version*]
      *
