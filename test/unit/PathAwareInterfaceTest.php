@@ -29,6 +29,7 @@ class PathAwareInterfaceTest extends TestCase
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getPath()
+            ->getPathSegments()
             ->new();
 
         return $mock;
@@ -44,5 +45,6 @@ class PathAwareInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'Could not create a valid instance of the test subject.');
+        $this->assertInstanceOf('Dhii\\Data\\PathSegmentsAwareInterface', $subject, 'Subject does not implement required interface');
     }
 }
