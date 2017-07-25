@@ -7,7 +7,7 @@ namespace Dhii\Data;
  *
  * @since [*next-version*]
  */
-interface PathAwareInterface extends PathSegmentsAwareInterface
+interface PathAwareInterface
 {
     /**
      * Retrieve the path that belongs to this instance.
