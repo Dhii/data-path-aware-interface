@@ -10,7 +10,11 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "prefer-stable": true,
+    "require": {
+        "php": "^5.3 | ^7.0",
+        "dhii/stringable-interface": "^0.1"
+    },
     "require-dev": {
         "dhii/php-cs-fixer-config": "dev-php-5.3",
         "phpunit/phpunit": "4.*",
@@ -21,5 +25,9 @@
         "psr-4": {
             "Dhii\\Data\\": "src/"
         }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "csfix": "php-cs-fixer fix -vvv"
     }
 }

@@ -2,19 +2,21 @@
 
 namespace Dhii\Data;
 
+use Dhii\Util\String\StringableInterface as Stringable;
+
 /**
  * Something that can have a path retrieved.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface PathAwareInterface
 {
     /**
-     * Retrieve the path that belongs to this instancec.
+     * Retrieve the path that belongs to this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
-     * @return string The path that belongs to this instance.
+     * @return string|Stringable The path that belongs to this instance.
      */
     public function getPath();
 }
