@@ -3,6 +3,7 @@
 namespace Dhii\Data;
 
 use Traversable;
+use Dhii\Util\String\StringableInterface as Stringable;
 
 /**
  * Something that can have path segments retrieved from it.
