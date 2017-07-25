@@ -8,14 +8,14 @@ use Dhii\Util\String\StringableInterface as Stringable;
 /**
  * Something that can have path segments retrieved from it.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface PathSegmentsAwareInterface
 {
     /**
      * Retrieves a list of path segments.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return string[]|Stringable[]|Traversable The list of segments.
      */
